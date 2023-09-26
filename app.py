@@ -1,5 +1,5 @@
 import streamlit as st
-# from dotenv import load_dotenv 
+from dotenv import load_dotenv 
 from PyPDF2 import PdfReader
 
 def get_pdf_text(pdf_docs):
@@ -16,7 +16,7 @@ def get_pdf_text(pdf_docs):
 
 
 def main():
-    # load_dotenv()
+    load_dotenv()
     st.set_page_config(page_title="Chat with multiple PDFS", page_icon=":books:")
 
     st.header("Chat with multiples PDFS :books:")
